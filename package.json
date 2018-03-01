@@ -1,0 +1,16 @@
+{
+  "name": "Miscellanies",
+  "version": "0.0.1",
+  "scripts": {
+    "go": "node ./src/faceBd.js",
+    "build": "webpack",
+    "start": "webpack  --progress --colors  "
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.10",
+    "html-loader": "^0.5.5",
+    "ts-loader": "^4.0.0",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.9"
+  }
+}
