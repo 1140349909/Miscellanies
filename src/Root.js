@@ -2,7 +2,9 @@
  * Created by caihong on 2018/3/1.
  */
 import React, {Component} from 'react';
-export default class Root extends Component {
+
+
+export default class Root extends React.Component {
     render() {
         return (
             <div style={{textAlign: 'center'}}>
