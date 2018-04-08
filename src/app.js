@@ -4,9 +4,10 @@
 
 import  React from 'react';
 import  ReactDOM from 'react-dom';
-import  Root from './Root';
+import  Table from './Table';
+
 
 ReactDOM.render(
-    <Root></Root>,
+    <Table></Table>,
     document.getElementById('root')
 );

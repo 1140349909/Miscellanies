@@ -36,3 +36,7 @@ HMR是一个webpack插件，它让你能浏览器中实时观察模块修改后�
 Babel有一个叫做react-transform-hrm的插件，可以在不对React模块进行额外的配置的前提下让HMR正常工作；
 安装：
 npm install --save-dev babel-plugin-react-transform react-transform-hmr
+
+
+9.加载less,先安装less-loader
+npm install less less-loader --save-dev

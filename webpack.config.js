@@ -16,11 +16,13 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: ['css-loader', 'sass-loader']
-                })
+                test: /\.css$/,
+                use: ['style-loader', {
+                    loader: 'css-loader',
+                    options: {
+                        modules: true,//让css-loader支持Css Modules。
+                    },
+                },],
             },
             {
                 test: /\.(png|jpq)$/,
@@ -52,6 +54,10 @@ module.exports = {
     devServer: {
         contentBase: '/src',//本地服务器所加载的页面所在的目录
         historyApiFallback: true,//不跳转
-
-    }
+        hot:true,
+        inline:true,
+        progress:true,
+        port:9090//端口自定义
+    },
+    devtool:'eval-source-map',//这样出错以后就会采用source-map的形式直接显示你出错代码的位置。
 };
